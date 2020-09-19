@@ -46,6 +46,12 @@ class GraphMST{
 			}else {
 				list[node].isVisited = true;
 				display(current);
+				if(list[node].label == 'D') {
+					display(node);
+					System.out.print(" ");
+					s.push(node);
+					break;
+				}
 				display(node);
 				System.out.print(" ");
 				s.push(node);
